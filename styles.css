@@ -37,19 +37,17 @@ html {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.sidebar ul li {
+.sidebar ul a {
+    color: var(--light-blue);
+    text-decoration: none;
     margin-bottom: 10px;
 }
 
-.sidebar ul li a {
-    color: var(--light-blue);
-    text-decoration: none;
-
-}
-
-.sidebar ul li a:hover {
+.sidebar ul a:hover {
     color: #1C2C5B;
 }
 
