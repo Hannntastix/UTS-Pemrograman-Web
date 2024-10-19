@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./../Assets/Logo MC.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+
+    <div class="container">
+        <img src="./../Assets/Logo.png" alt="Manchester City Logo">
+        <h2>Fan Form</h2>
+        <form id="registrationForm" action="./../List/index.html" method="GET">
+            <label for="name">Full Name:</label>
+            <input placeholder="Input Your Fullname" type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input placeholder="Input Your Email" type="email" id="email" name="email" required>
+
+            <label for="email">Why You Want to Join The FanPage:</label>
+            <textarea placeholder="Input Your Reason" type="text" id="motivation" name="motivation" required></textarea>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">-- Choose Your Gender --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
